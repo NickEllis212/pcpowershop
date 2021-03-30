@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "nodemon --watch backend --exec node -- experimental-modules backend/server.js ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run frontend/build"
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
    
   },
   "author": "",
